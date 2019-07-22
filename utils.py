@@ -18,6 +18,7 @@ def make_link(link, post_header, style):
 
 
 def log_message(logger, update, success=True):
+    status = ''
     if success:
         status = 'Success'
     else:
@@ -32,7 +33,7 @@ def log_message(logger, update, success=True):
 def print_to_console(text, color):
     if color == 'green':
         print(f'{datetime.now()} \033[92m {text} \033[0m')
-    elif color == 'red':
+    elif color == 'blue':
         print(f'{datetime.now()} \033[94m {text} \033[0m')
     else:
         raise ValueError(f'unknown `color` argument "{color}"')
