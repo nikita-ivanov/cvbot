@@ -1,11 +1,11 @@
+import logging
+import utils
+from collections import OrderedDict
+from bs4 import BeautifulSoup
 import telegram
 from telegram import ReplyKeyboardMarkup
 from telegram.ext import Updater, CommandHandler
 from urllib.request import urlopen
-from bs4 import BeautifulSoup
-import logging
-from collections import OrderedDict
-import utils
 
 
 logging.basicConfig(filename='cvbot.log', format='%(asctime)s %(message)s')
